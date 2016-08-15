@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Query">計算</string>
+    <string name="ApplicationName">jackApp</string>
+  <string name="SpinnerYear">選擇年份</string>
+  <string name="SpinnerMon">選擇月份</string>
+</resources>
