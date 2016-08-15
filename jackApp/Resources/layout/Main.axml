@@ -8,13 +8,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingTop="20px">
-        <TextView
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="10px"
-            android:paddingTop="20px"
-            android:text="年：" />
         <Spinner
             android:prompt="@string/SpinnerYear"
             android:layout_width="wrap_content"
@@ -26,12 +19,19 @@
             android:layout_height="wrap_content"
             android:paddingLeft="10px"
             android:paddingTop="20px"
-            android:text="月：" />
+            android:text="年" />
         <Spinner
             android:prompt="@string/SpinnerMon"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/spinnerMon" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:text="月" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="10px"
             android:paddingTop="20px"
-            android:text="費用總計：" />
+            android:text="總金額：" />
         <EditText
             android:inputType="number"
             android:id="@+id/editTextTot"
@@ -98,6 +98,42 @@
         <EditText
             android:inputType="number"
             android:id="@+id/editTextFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:layout_marginLeft="40px"
+            android:paddingTop="20px" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20px">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:text="國定假日：" />
+        <EditText
+            android:inputType="number"
+            android:id="@+id/editTextNDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:layout_marginLeft="40px"
+            android:paddingTop="20px" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:text="補上課：" />
+        <EditText
+            android:inputType="number"
+            android:id="@+id/editTextADay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.50"
@@ -151,109 +187,109 @@
             android:layout_height="match_parent"
             android:id="@+id/textViewEdt" />
     </LinearLayout>
-  <LinearLayout
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingTop="20px">
-    <TextView
-        android:text="總上課天數："
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:paddingLeft="10px"
-        android:paddingTop="20px"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent" />
-    <TextView
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:paddingLeft="10px"
-        android:paddingTop="20px"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/textViewWorkday" />
-  </LinearLayout>
-  <LinearLayout
- android:orientation="horizontal"
- android:layout_width="match_parent"
- android:layout_height="wrap_content"
- aandroid:paddingTop="20px">
-    <TextView
-        android:text="(四捨五入)應收："
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:paddingLeft="10px"
-        android:paddingTop="20px"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent" />
-    <TextView
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:paddingLeft="10px"
-        android:paddingTop="20px"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/textView4Mtot" />
-  </LinearLayout>
-  <LinearLayout
- android:orientation="horizontal"
- android:layout_width="match_parent"
- android:layout_height="wrap_content"
- android:paddingTop="20px">
-    <TextView
-        android:text="應收："
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:paddingLeft="10px"
-        android:paddingTop="20px"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent" />
-    <TextView
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:paddingLeft="10px"
-        android:paddingTop="20px"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/textViewMtot" />
-  </LinearLayout>
-  <LinearLayout
-  android:orientation="horizontal"
-  android:layout_width="match_parent"
-  android:layout_height="wrap_content"
-  android:paddingTop="20px">
-    <TextView
-        android:text="(四捨五入)應退："
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:paddingLeft="10px"
-        android:paddingTop="20px"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent" />
-    <TextView
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:paddingLeft="10px"
-        android:paddingTop="20px"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/textView4Ntot" />
-  </LinearLayout>
-  <LinearLayout
-  android:orientation="horizontal"
-  android:layout_width="match_parent"
-  android:layout_height="wrap_content"
-  android:paddingTop="20px">
-    <TextView
-        android:text="應退："
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:paddingLeft="10px"
-        android:paddingTop="20px"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent" />
-    <TextView
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:paddingLeft="10px"
-        android:paddingTop="20px"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/textViewNtot" />
-  </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20px">
+        <TextView
+            android:text="總上課天數："
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewWorkday" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20px">
+        <TextView
+            android:text="(四捨五入)應收："
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView4Mtot" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20px">
+        <TextView
+            android:text="應收："
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewMtot" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20px">
+        <TextView
+            android:text="(四捨五入)應退："
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView4Ntot" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20px">
+        <TextView
+            android:text="應退："
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:paddingLeft="10px"
+            android:paddingTop="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textViewNtot" />
+    </LinearLayout>
 </LinearLayout>
