@@ -113,7 +113,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1">
+        android:paddingTop="20px">
         <TextView
             android:text="開始日："
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -134,7 +134,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1">
+        android:paddingTop="20px">
         <TextView
             android:text="結束日："
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -155,7 +155,7 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/linearLayout1">
+    android:paddingTop="20px">
     <TextView
         android:text="總上課天數："
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -176,7 +176,7 @@
  android:orientation="horizontal"
  android:layout_width="match_parent"
  android:layout_height="wrap_content"
- android:id="@+id/linearLayout1">
+ aandroid:paddingTop="20px">
     <TextView
         android:text="(四捨五入)應收："
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -197,7 +197,7 @@
  android:orientation="horizontal"
  android:layout_width="match_parent"
  android:layout_height="wrap_content"
- android:id="@+id/linearLayout1">
+ android:paddingTop="20px">
     <TextView
         android:text="應收："
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -218,7 +218,7 @@
   android:orientation="horizontal"
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
-  android:id="@+id/linearLayout1">
+  android:paddingTop="20px">
     <TextView
         android:text="(四捨五入)應退："
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -239,7 +239,7 @@
   android:orientation="horizontal"
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
-  android:id="@+id/linearLayout1">
+  android:paddingTop="20px">
     <TextView
         android:text="應退："
         android:textAppearance="?android:attr/textAppearanceMedium"
