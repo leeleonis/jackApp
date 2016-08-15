@@ -106,7 +106,6 @@ namespace jackApp
                 vtextViewMtot.Text = (DoubleTot - ntot).ToString("#.###");
                 vtextView4Mtot.Text = (DoubleTot - ntot).ToString("#");
             }
-
         }
         private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
